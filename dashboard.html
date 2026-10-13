@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - JobTrack</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div id="nav_one"><h2>💼 JobTrack</h2></div>
+        <div id="nav_two">
+            <a href="./index.html">Home</a>
+            <a href="./jobs.html">Jobs</a>
+            <a href="./applications.html">Applications</a>
+            <a href="./interviews.html">Interviews</a>
+            <a href="./dashboard.html">Dashboard</a>
+        </div>
+    </nav>
+
+    <h1 id="title">Dashboard</h1>
+    
+    <div id="dashboardStats">
+        <div class="application-card" style="background:#e0f2fe;">
+            <h2 id="totalApplications">0</h2>
+            <p>Total Applied</p>
+        </div>
+        <div class="application-card" style="background:#fef9c3;">
+            <h2 id="shortlisted">0</h2>
+            <p>Shortlisted</p>
+        </div>
+        <div class="application-card" style="background:#dcfce7;">
+            <h2 id="interviews">0</h2>
+            <p>Interviews</p>
+        </div>
+        <div class="application-card" style="background:#dbeafe;">
+            <h2 id="selected">0</h2>
+            <p>Selected</p>
+        </div>
+        <div class="application-card" style="background:#fee2e2;">
+            <h2 id="rejected">0</h2>
+            <p>Rejected</p>
+        </div>
+    </div>
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>

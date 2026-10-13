@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(241, 243, 244);
+}
+
+/* NAVBAR */
+nav, .navbar{
+    height:4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#nav_one, .logo{
+    font-size:1.4rem;
+    color:#040a71;
+    font-weight:700;
+}
+
+#nav_two, .nav-links{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:30px;
+}
+
+#nav_two>a, .nav-links>a{
+    text-decoration:none;
+    font-size:1.1rem;
+    font-weight:600;
+    color:#040a71;
+}
+
+#nav_two>a:hover, .nav-links>a:hover{
+    color:#1e40af;
+}
+
+/* HERO - Home Page */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #031c44, #031256);
+  color: white;
+}
+.hero h1 { font-size:36px; margin-bottom:15px; font-family: Arial, sans-serif; }
+.hero p { font-size:18px; opacity:0.9; max-width:600px; margin:0 auto 25px; }
+.hero-btns { display:flex; gap:15px; justify-content:center; margin-bottom:40px; }
+.btn { background:white; color:#1e293b; padding:12px 25px; border-radius:25px; text-decoration:none; font-weight:bold; }
+.btn-outline { border:2px solid white; color:white; padding:10px 25px; border-radius:25px; text-decoration:none; }
+.hero-stats { display:flex; justify-content:center; gap:50px; margin-top:30px; }
+.hero-stats h2 { font-size:28px; }
+.features { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; padding:40px 20px; }
+.feature-card { text-align:center; padding:25px; border:1px solid #ddd; border-radius:10px; background:white; }
+footer { text-align:center; padding:20px; background:#f1f5f9; margin-top:30px; }
+
+/* FORMS */
+main{
+    border-radius:20px; 
+    height:25rem;
+    margin:70px auto;
+    box-shadow: rgba(11,11,18,0.1) 0px 1px 0px, rgba(8,8,15,0.1) 0px 8px 24px, rgba(17,17,26,0.1) 0px 16px 48px;
+    width:30rem;
+    background: white;
+    padding-top:20px;
+}
+main>h1{ text-align:center; padding:20px; font-size:1.8rem; }
+#registermain{ height:34rem; }
+
+#loginform,#registerform{
+    display:flex;
+    flex-direction:column;
+    gap:18px
+}
+#loginform>label, #registerform>label{
+    padding-left:4.3rem;
+    font-weight:600;
+    font-size:1.4rem;
+    color:#040a71;
+}
+#loginform>input, #registerform>input{
+   font-size:17px;
+   height:35px;
+   width:75%;
+   border-radius:5px;
+   border:2px solid black;
+   padding:6px 10px;
+   margin:auto;
+}
+#loginform>button,#registerform>button{
+    width:25%;
+    border-radius:20px;
+    height:32px;
+    margin:auto;
+    border:2px solid #040a71;
+    margin-top:15px;
+    font-size:15px;
+    color:#040a71;
+    font-weight:600;
+    cursor:pointer;
+    background:rgb(231, 227, 227);
+}
+
+/* JOBS PAGE */
+#jobpage{ height:auto; width:auto; margin:0; background-color:rgb(242,242,242); box-shadow:none; }
+#title{ display:flex; justify-content:center; align-items:center; padding:20px; color:#0c1c55; }
+
+#jobscontainer{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:20px;
+    padding:20px;
+}
+.job-card{
+    height:310px;
+    width:280px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    background:white;
+    box-shadow: rgba(11,11,18,0.1) 0px 1px 0px, rgba(8,8,15,0.1) 0px 8px 24px, rgba(17,17,26,0.1) 0px 16px 48px;
+}
+.job-card>h2{ font-size:20px; }
+.job-card>p{ font-size:1rem; font-weight:500; }
+.job-card>button{
+    padding:10px 25px;
+    background-color:rgb(231, 227, 227);
+    color:navy;
+    border:2px solid navy;
+    transition:transform 0.3s ease;
+    border-radius:20px;
+    font-weight:600;
+    cursor:pointer;
+}
+.job-card>button:hover{ transform:translateY(-5px); }
+.job-card>button:disabled{ background:green; color:white; border-color:green; }
+
+/* APPLICATIONS & DASHBOARD & INTERVIEWS */
+#applicationsContainer, #dashboardStats, #interviewsContainer {
+    display:flex;
+    gap:20px;
+    margin:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.application-card {
+    width:320px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    padding:20px;
+    background:white;
+}
+.application-card h2 { font-size:1.3rem; margin-bottom:10px; text-align:center; }
+.application-card p { margin:5px 0; font-size:1rem; }
+
+.application-card select, .statusSelect {
+    padding:8px 12px;
+    border-radius:10px;
+    font-size:1rem;
+    cursor:pointer;
+    border:1px solid #ddd;
+}
+
+#dashboards{ padding:20px; }
+#dashboards>h1{ justify-content:center; margin:20px 0; }
+#welcomeMessage{ text-align:center; font-size:1.2rem; margin-bottom:20px; color:#040a71; font-weight:600; }
+#maininterviewspage{ padding:20px; text-align:center; }
